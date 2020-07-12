@@ -6,13 +6,23 @@ void main() =>  runApp(MaterialApp(
     appBar:AppBar(
       title:Text('App Pertama saya'),
       centerTitle: true,
+      backgroundColor: Colors.red[900],
     ),
     body:Center(
-      child:Text('Hallo Cath') ,
+      child:Text(
+        'Hallo Cath',
+        style:TextStyle(
+          fontSize:20.0,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 2,
+          color: Colors.grey[600],
+            )
+      ) ,
     ),
     floatingActionButton: FloatingActionButton(
       onPressed: (){},
-      child:Text("klik")
+      child:Text("klik"),
+      backgroundColor: Colors.red[600],
     ),
   ),
 ));
